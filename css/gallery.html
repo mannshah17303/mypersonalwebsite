@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        nav{
+            display: flex;
+            height: 70px;
+            background-color: rgb(38, 35, 35);
+        }
+        nav ul{
+            display: flex;
+            /* padding: 0px 10px; */
+            align-items: center;
+        }
+        /* .sidebar {
+            background-color: grey;
+            width: 234px;
+            font-family: sans-serif;
+            height: 120vh;
+        } */
+
+        
+
+        nav li {
+            list-style: none;
+            font-size: 20px;
+            /* padding: 33px 0; */
+            font-weight: bolder;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: black;
+            padding: 0px 70px;
+            color: white;
+        }
+
+        .main {
+            width: 90vw;
+        }
+
+        /* .container {
+            display: flex;
+
+        } */
+
+
+        .infocontainer {
+
+            height: 58vh;
+            width: 80vw;
+            margin: 144px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .devinfo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: monospace;
+        }
+
+        .hello {
+            font-size: 65px;
+        }
+
+        .about {
+            font-size: 40px;
+        }
+
+        .name {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .buttons {
+            margin-top: 34px;
+        }
+
+        .buttons button {
+            padding: 9px 14px;
+            border-radius: 22px;
+            background-color: darkgreen;
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+            margin: 0 3px;
+            cursor: pointer;
+
+        }
+
+        .buttons button:hover {
+            background-color: white;
+            color: dodgerblue;
+        }
+
+        .devpic img {
+            height: 58vh;
+
+        }
+
+        .moreabout {
+            font-size: 29px;
+            font-family: sans-serif;
+        }
+
+       
+
+        .row {
+            flex: 0 0 33.33%;
+            flex-wrap: wrap;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .column{
+            margin: 20px 5px;
+           
+        }
+        .column img{
+            border: 2px solid black;
+            border-radius: 30px;
+        }
+        .column img:hover{
+            transition: all 0.5s;
+            transform: scale(1.1);
+        }
+        .container p {
+            display: flex;
+
+        }
+        .row-1{
+            width: 80%;
+            margin: auto;
+        }
+        .row {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-gap: 40px;
+        }
+    
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portfolio</title>
+</head>
+
+<body>
+    <!-- <embed src="" type=""> -->
+
+    <div class="container">
+        <!-- <div class="sidebar"> -->
+
+
+
+            <nav>
+                <ul>
+                    <li><a href="mywebsite.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="skills.html">Skills </a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="maps.html">My address</a></li>
+                    <li><a href="mailto:mannshah17303@gmail.com">Contact Me</a></li>
+                </ul>
+            </nav>
+
+
+        <!-- </div> -->
+        <div class="row-1">
+            <div class="row">
+                <div class="column">
+                    <img src="4.jpg" alt="statue of unity" style="width: 100%;">
+                </div>
+                <div class="column">
+                    <img src="7.jpg" alt="statue of unity" style="width: 100%;">
+                </div>
+                <div class="column">
+                    <img src="9.jpg" alt="statue of unity" style="width: 100%;">
+                </div>
+                <div class="column">
+                    <img src="3.jpg" alt="statue of unity" style="width: 100%;">
+                </div>
+                <div class="column">
+                    <img src="13.jpg" alt="statue of unity" style="width: 100%;">
+                </div>
+                <div class="column">
+                    <img src="11.jpg" alt="statue of unity" style="width: 100%;">
+                </div>
+                <div class="column">
+                    <img src="10.jpg" alt="statue of unity" style="width: 100%;">
+                </div>
+                <div class="column">
+                    <img src="12.jpg" alt="statue of unity" style="width: 100%;">
+                </div>
+                <div class="column">
+                    <img src="2.jpg" alt="statue of unity" style="width: 100%; height: 490px;">
+                </div>
+                
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

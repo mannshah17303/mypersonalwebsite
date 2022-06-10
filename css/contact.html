@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background:  -webkit-linear-gradient(left, rgb(133, 19, 6), white, rgb(90, 129, 226));
+;
+        }
+
+        nav{
+            display: flex;
+            height: 70px;
+            background-color: rgb(38, 35, 35);
+        }
+        nav ul{
+            display: flex;
+            /* padding: 0px 10px; */
+            align-items: center;
+        }
+        
+
+        
+
+        nav li {
+            list-style: none;
+            font-size: 20px;
+            /* padding: 33px 0; */
+            font-weight: bolder;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: black;
+            padding: 0px 70px;
+            color: white;
+        }
+        .main {
+            /* background-color: yellow; */
+            width: 90vw;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .infocontainer {
+            /* background-color: rgb(202, 9, 128); */
+            height: 58vh;
+            width: 80vw;
+            margin: 144px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .devinfo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: monospace;
+        }
+
+        .hello {
+            font-size: 65px;
+        }
+
+        .about {
+            font-size: 40px;
+        }
+
+        .name {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .buttons {
+            margin-top: 34px;
+        }
+
+        .buttons button {
+            padding: 9px 14px;
+            border-radius: 22px;
+            background-color: darkgreen;
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+            margin: 0 3px;
+            cursor: pointer;
+
+        }
+
+        .buttons button:hover{
+            background-color: white;
+            color: dodgerblue;
+        }
+
+        .devpic img {
+            height: 58vh;
+
+        }
+
+        .moreabout {
+            font-size: 29px;
+            font-family: sans-serif;
+        }
+
+        .contactform{
+            font-family: sans-serif;
+        }
+        .contactform h1{
+                font-family: monospace;
+                text-align: center;
+                padding: 30px;
+        }
+        .contactform form div{
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contactform form div input{
+            width: 26vw;
+            border-radius: 5px;
+            margin: 6px 0 0 0;
+            padding: 3px;
+        }
+
+        #emailHelp{
+            font-size: 8px;
+            color: midnightblue;
+            margin: 0 5px;
+        }
+
+        #form-check{
+                flex-direction: row;
+        }
+
+        #form-check input{
+            width: 24px;
+            margin: 0 5px;
+        }
+        .btn-sm{
+            font-size: 14px;
+            
+        }
+        .btn-sm:hover{
+            cursor: pointer;
+            border-radius: 5px;
+            
+        }
+        form{
+            padding-left: 411px;
+        }
+
+        @media(max-width:1615px){
+            .contactform{
+                margin: 50px 8px;
+            }
+           
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portfolio</title>
+</head>
+
+<body>
+    
+           
+
+
+            <nav>
+                <ul>
+                    <li><a href="mywebsite.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="skills.html">Skills </a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="maps.html">My address</a></li>
+                    <li><a href="mailto:mannshah17303@gmail.com">Contact Me</a></li>
+                </ul>
+            </nav>
+        <div class="container"></div>
+        <div class="main">
+            <div class="contactform">
+                <h1>Contact me for work/general Enquiries:</h1>
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"><br>
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleInputPhone1">Phone Number</label>
+                        <input type="number" class="form-control" id="exampleInputPhone1" placeholder="Mobile Number">
+                      </div>
+
+                    <div class="mb-3" id="form-check">
+                      <input type="checkbox" class="form-check-input" id="isclient">
+                      <label class="form-check-label" for="isclient">I want to work with you</label>
+                    </div>
+
+
+                    <button type="submit" class="btn-sm">Submit</button>
+                  </form>
+            </div>
+           </div>
+           </div>
+</body>
+
+</html>

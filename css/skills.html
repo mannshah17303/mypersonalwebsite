@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+       
+
+        nav{
+            display: flex;
+            height: 70px;
+            width: 100vw;
+            background-color: rgb(38, 35, 35);
+        }
+        nav ul{
+            display: flex;
+            /* padding: 0px 10px; */
+            align-items: center;
+        }
+        /* .sidebar {
+            background-color: grey;
+            width: 234px;
+            font-family: sans-serif;
+            height: 120vh;
+        } */
+
+        
+
+        nav li {
+            list-style: none;
+            font-size: 20px;
+            /* padding: 33px 0; */
+            font-weight: bolder;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: black;
+            padding: 0px 70px;
+            color: white;
+        }
+
+        .main {
+            /* background-color: yellow; */
+            width: 90vw;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .infocontainer {
+            /* background-color: rgb(202, 9, 128); */
+            height: 58vh;
+            width: 80vw;
+            margin: 144px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .devinfo {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-family: monospace;
+        }
+
+        .hello {
+            font-size: 65px;
+        }
+
+        .about {
+            font-size: 40px;
+        }
+
+        .name {
+            font-size: 50px;
+            font-weight: bold;
+            font-family: sans-serif;
+        }
+
+        .buttons {
+            margin-top: 34px;
+        }
+
+        .buttons button {
+            padding: 9px 14px;
+            border-radius: 22px;
+            background-color: darkgreen;
+            color: white;
+            font-size: 21px;
+            font-weight: bold;
+            margin: 0 3px;
+            cursor: pointer;
+
+        }
+
+        .buttons button:hover {
+            background-color: white;
+            color: dodgerblue;
+        }
+
+        .devpic img {
+            height: 58vh;
+
+        }
+
+        .moreabout {
+            font-size: 29px;
+            font-family: sans-serif;
+        }
+
+        .intro h2 {
+            font-family: sans-serif;
+            margin: 12px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .intro p {
+            font-family: monospace;
+            margin: 12px;
+            font-size: x-large;
+            text-align: center;
+        }
+
+        .skill {
+            width: 265px;
+            height: 6px;
+            background-color: rgb(213, 213, 213);
+            border: 2px solid black;
+            border-radius: 33px;
+            position: relative;
+        }
+
+        .intro h1 {
+            font-family: sans-serif;
+            margin: 12px;
+            margin-top: 50px;
+        }
+
+        .skillcontainer {
+            padding: 10px;
+            margin-top: 3px;
+
+        }
+
+        .skillitems {
+            display: flex;
+            align-items: center;
+            font-family: monospace;
+            font-weight: 900;
+
+        }
+       
+        .hundred {
+            width: 265px;
+            background-color: blueviolet;
+        }
+
+        .fifty {
+            width: 125px;
+            background-color: aqua;
+        }
+
+        .t5 {
+            width: 75px;
+            background-color: yellow;
+        }
+
+        .anime {
+            animation-duration: 3s;
+            animation-name: left-to-right;
+            animation-iteration-count: 1;
+        }
+
+        .flex-i {
+            display: flex;
+            flex-direction: column;
+        }
+
+        @keyframes left-to-right {
+            from {
+                margin-left: 100%;
+                width: 300%;
+                color: rgb(3, 1, 7);
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+                color: green;
+            }
+        }
+        html,body{
+            display: grid;
+            /* height: 100%; */
+            place-items: center;
+            background: -webkit-linear-gradient(left, rgb(77, 175, 240), rgb(117, 16, 239));
+        }
+        .skillbar{
+            width: 600px;
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px, 30px;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+            margin: auto;
+        }
+
+        .skillbar .bar{
+            margin: 20px 0;
+        }
+        .skillbar .bar:first-child{
+            margin-top: 0px;
+        }
+
+        .skillbar .bar .info{
+            margin-bottom: 5px;
+        }
+
+        .skillbar .bar .info span{
+            font-size: 17px;
+            font-weight: bolder;
+            color: var(--skin-color);
+        }
+
+        .skillbar .bar .progressline{
+            position: relative;
+            height: 10px;
+            width: 100%;
+            background: #f0f0f0;
+            transform: scaleX(0);
+            transform-origin: left;
+            box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.05),
+                              0px 1px rgba(255, 255, 255, 0.8);
+                              animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+        }
+        .bar .progressline span{
+            height: 100%;
+            width: 80%;
+            background: #f61010;
+            position: absolute;
+            border-radius: 10px;
+            transform: scaleX(0);
+            transform-origin: left;
+            animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+        }
+
+        @keyframes animate{
+            100%{
+                transform: scaleX(1);
+            }
+        }
+
+        .progressline.html span{
+            width: 80%;
+        }
+
+        .progressline.css span{
+            width: 45%;
+        }
+
+        .progressline.javascript span{
+            width: 30%;
+        }
+
+        .progressline.c  span{
+            width: 90%;
+        }
+
+        .progressline.python span{
+            width: 20%;
+        }
+
+        .progressline.PHP span{
+            width: 10%;
+        }
+
+        .bar .progressline span::before{
+            position: absolute;
+            content: "";
+            right: 0;
+            top: -10px;
+            height: 0;
+            width: 0;
+            border: 7px solid transparent;
+            border-bottom-width: 0px;
+            border-right-width: 0px;
+            border-top-color: #000;
+            
+        }
+
+        .bar .progressline span::after{
+            position: absolute;
+            content: "80%";
+            right: 0;
+            top: -28px;
+            color: #fff;
+            font-size: 12px;
+            font-weight: 500;
+            background: #000;
+            padding: 1px 8px;
+            border-radius: 3px;
+            opacity: 0;
+            animation: showText2 0.5s 1.5s linear forwards;
+
+            
+          
+           
+            
+        }
+
+        @keyframes showText2{
+            100%{
+                opacity: 1;
+            }
+        }
+
+        .progressline.html span::after{
+            content: "80%";
+        }
+
+        .progressline.css span::after{
+            content: "45%";
+        }
+
+        .progressline.javascript span::after{
+            content: "30%";
+        }
+
+        .progressline.c  span::after{
+            content: "90%";
+        }
+
+        .progressline.python span::after{
+            content: "20%";
+        }
+        .progressline.PHP span::after{
+            content: "10%";
+        }
+
+        .style-switcher {
+            position: fixed;
+            right: 0;
+            top: 80px;
+            padding: 15px;
+            width: 200px;
+            border: 1px solid var(--bg-black-50);
+            background: var(--bg-black-100);
+            z-index: 101;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+            transform: translateX(100%);
+        }
+
+        .style-switcher.open {
+            transform: translateX(-25px);
+        }
+
+        .style-switcher .s-icon {
+            position: absolute;
+            height: 40px;
+            width: 40px;
+            text-align: center;
+            font-size: 25px;
+            background: var(--bg-black-100);
+            color: var(--text-black-900);
+            right: 100%;
+            border: 1px solid var(--bg-black-50);
+            margin-right: 25px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 50%;
+        }
+
+        .style-switcher .s-icon i {
+            line-height: 40px;
+        }
+
+        .style-switcher .style-switcher-toggler {
+            top: 0;
+        }
+
+        .style-switcher .day-night {
+            top: 55px;
+        }
+
+        .style-switcher h4 {
+            margin: 0 0 10px;
+            color: var(--text-black-700);
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+
+        .style-switcher .colors {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .style-switcher .colors span {
+            display: inline-block;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        .style-switcher .color-1 {
+            background-color: #ec1839;
+            cursor: pointer;
+        }
+
+        .style-switcher .color-2 {
+            background-color: #410449;
+            cursor: pointer;
+        }
+
+        .style-switcher .color-3 {
+            background-color: #064809;
+            cursor: pointer;
+        }
+
+        .style-switcher .color-4 {
+            background-color: #1854b4;
+            cursor: pointer;
+        }
+
+        .style-switcher .color-5 {
+            background-color: #f021b2;
+            cursor: pointer;
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="color1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="color2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="color3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="color4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="color5.css" class="alternate-style" title="color-5" disabled>
+    <title>My personal portfolio</title>
+</head>
+
+<body>
+
+
+
+            <nav>
+                <ul>
+                    <li><a href="mywebsite.html">Home</a></li>
+                    <li><a href="aboutme.html">About Me</a></li>
+                    <li><a href="skills.html">Skills </a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="maps.html">My address</a></li>
+                    <li><a href="mailto:mannshah17303@gmail.com">Contact Me</a></li>
+                </ul>
+            </nav>
+        <div class="container">
+        <div class="main">
+            <div class="intro">
+            
+                
+                    
+
+                <h1 style="text-align: center;">My Skills</h1>
+                
+                    
+                <div class="skillbar">
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML</span>
+                        </div>
+                        <div class="progressline html">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>CSS</span>
+                        </div>
+                        <div class="progressline css">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>JAVASCRIPT</span>
+                        </div>
+                        <div class="progressline javascript">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>C++</span>
+                        </div>
+                        <div class="progressline c">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>PYTHON</span>
+                        </div>
+                        <div class="progressline python">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="bar">
+                        <div class="info">
+                            <span>PHP</span>
+                        </div>
+                        <div class="progressline PHP">
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+            <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+            <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+        </div>
+    </div>
+</body>
+<script src="/style.js"></script>
+
+</html>

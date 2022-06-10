@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            height: 70px;
+            background-color: rgb(38, 35, 35);
+        }
+
+        nav ul {
+            display: flex;
+            /* padding: 0px 10px; */
+            align-items: center;
+        }
+
+        /* .sidebar {
+            background-color: grey;
+            width: 234px;
+            font-family: sans-serif;
+            height: 120vh;
+        } */
+
+
+
+        nav li {
+            list-style: none;
+            font-size: 20px;
+            /* padding: 33px 0; */
+            font-weight: bolder;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: black;
+            padding: 0px 70px;
+            color: white;
+        }
+
+        
+
+        
+
+       
+
+       
+
+      
+
+      
+
+      
+
+
+       
+
+       
+
+       
+
+       
+
+       
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: sans-serif;
+            background: -webkit-linear-gradient(left, yellow, white, red);
+        }
+        #blog{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 40px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+
+        }
+        .blogheading{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .blogheading span{
+            color: #f33c3c;
+        }
+
+        .blogheading h3{
+            font-size: 2.3rem;
+            color: black;
+            font-weight: 600;
+        }
+        .blogcontainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px 0px;
+            flex-wrap: wrap;
+        }
+
+        .blogbox{
+            width: 350px;
+            background-color: #ffffff;
+            border: 1px solid #ececec;
+            margin: 20px;
+        }
+        .blogimg{
+            width: 100%;
+            height: auto;
+        }
+        .blogimg img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+        .blogtext{
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .blogtext span{
+            color: #f33c3c;
+            font-size: 0.9rem;
+        }
+        .blogtext .blogtitle{
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #272727;
+        }
+        .blogtext .blogtitle:hover{
+            color: #f33c3c;
+            transition: all ease 0.3s;
+        }
+        .blogtext p{
+            color: lightgrey;
+            font-size: 0.9rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin: 20px 0px;
+        }
+        .blogtext a{
+            color: black;
+        }
+        .blogtext a:hover{
+            color: #f33c3c;
+            transition: all ease 0.3s;
+        }
+
+        @media(max-width:1250px){
+            .blogbox{
+                width: 300px;
+            }
+        }
+
+        @media(max-width:1100px){
+            .blogbox{
+                width: 70%;
+            }
+        }
+
+        @media(max-width:550px){
+            .blogbox{
+                margin: 20px 10px;
+                width: 100%;
+            }
+            #blog{
+                padding: 20px;
+            }
+        }
+
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My personal portfolio</title>
+</head>
+
+<body>
+
+
+
+
+    <nav>
+        <ul>
+            <li><a href="mywebsite.html">Home</a></li>
+            <li><a href="aboutme.html">About Me</a></li>
+            <li><a href="skills.html">Skills </a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="maps.html">My address</a></li>
+            <li><a href="mailto:mannshah17303@gmail.com">Contact Me</a></li>
+        </ul>
+    </nav>
+    
+        <section id="blog">
+            <div class="blogheading">
+                <span>My Recent Posts</span>
+                <h3>My Blog</h3>
+            </div>
+
+            <div class="blogcontainer">
+                <div class="blogbox">
+                    <div class="blogimg">
+                        <img src="blog1.jpg" alt="Blog">
+                    </div>
+
+                    <div class="blogtext">
+                        <span>17th March 2021</span>
+                        <a href="http://www.tennisnow.com/" class="blogtitle">What has Happened of all of the web Design?</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Corrupti labore in quas repellendus 
+                            repudiandae ullam inventore tempora, dolor quam 
+                            illum doloribus recusandae quia libero rem 
+                            officiis mollitia sapiente nostrum iste.</p>
+                            <a href="#">Read More</a>
+                    </div>
+
+                </div>
+
+                <div class="blogbox">
+                    <div class="blogimg">
+                        <img src="blog2.jpg" alt="Blog">
+                    </div>
+
+                    <div class="blogtext">
+                        <span>18th May 2021</span>
+                        <a href="https://talksport.com/" class="blogtitle">What has Happened of all of the web Design?</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Corrupti labore in quas repellendus 
+                            repudiandae ullam inventore tempora, dolor quam 
+                            illum doloribus recusandae quia libero rem 
+                            officiis mollitia sapiente nostrum iste.</p>
+                            <a href="#">Read More</a>
+                    </div>
+
+                </div>
+
+                <div class="blogbox">
+                    <div class="blogimg">
+                        <img src="blog3.jpg" alt="Blog">
+                    </div>
+
+                    <div class="blogtext">
+                        <span>1st December 2021</span>
+                        <a href="https://cricblog.net/" class="blogtitle">What has Happened of all of the web Design?</a>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                            elit. Corrupti labore in quas repellendus 
+                            repudiandae ullam inventore tempora, dolor quam 
+                            illum doloribus recusandae quia libero rem 
+                            officiis mollitia sapiente nostrum iste.</p>
+                            <a href="#">Read More</a>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+        
+</body>
+
+</html>

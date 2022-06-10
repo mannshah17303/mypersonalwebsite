@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        
+        nav{
+            display: flex;
+            height: 70px;
+            background-color: rgb(38, 35, 35);
+        }
+        nav ul{
+            display: flex;
+            /* padding: 0px 10px; */
+            align-items: center;
+        }
+        /* .sidebar {
+            background-color: grey;
+            width: 234px;
+            font-family: sans-serif;
+            height: 120vh;
+        } */
+
+        
+
+        nav li {
+            list-style: none;
+            font-size: 20px;
+            /* padding: 33px 0; */
+            font-weight: bolder;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: black;
+            padding: 0px 70px;
+            color: white;
+        }
+
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: lightblue;
+        }
+        h1{
+            color: rgb(6, 6, 99);
+            margin-bottom: 60px;
+        }
+
+        iframe{
+            width: 80%;
+            height: 500px;
+            filter: invert(100%);
+
+        }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+
+
+
+        <nav>
+            <ul>
+                <li><a href="mywebsite.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="maps.html">My address</a></li>
+                <li><a href="mailto:mannshah17303@gmail.com">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="container">
+        <h1>My permanent Residance Location</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.3381600188977!2d72.51224061476995!3d23.
+        048060884940252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e9b53d5716a87%3A0x28bd924c10054281!2sSambandh%20Twins!5e0!3m2!1sen!2sin!4v1652983640833!5m2!1sen!2sin" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+</body>
+</html>
